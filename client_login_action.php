@@ -6,12 +6,15 @@
 
 <?php
 
-//echo "Username: ";
-//echo $_POST["username"];
-//echo "<br>";
-//echo "Password: ", $_POST["password"];
+$user_name = "root";
+$password = "elykjk22";
+//$database = "database123";
+$host_name = "localhost"; 
 
-header('Location: client_home.html');
+mysql_connect($host_name, $user_name, $password);
+
+echo "Connection opened";
+
 ?>
 </body>
 </html>
