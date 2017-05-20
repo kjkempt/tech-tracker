@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <title>Bank Client Login</title>
+  <meta charset="UTF-8">
+  
+  <style>
+  div.header {
+  		background-color: lightgreen;
+  		color: black;
+  		width: 1000px;
+  		margin: 10px;
+    	padding: 20px;
+  }
+  
+  h1.groove {border-style: groove;}
+  h1.login {
+  	text-align: left;
+  	font-size: 30px;
+  	font-family: "Times New Roman", Times, serif;
+  	}
+  
+  
+  </style>
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+
+<!-- 
+Banner header on top of page
+-contains logo in .png file
+-->
+<div class="header">
+<h1 class = "groove"> 
+<img src="BancLogo.jpg" alt="BANCSOURCE LOGO" style="width: 150px; height:100px; vertical-align: middle;">
+<span style="vertical-align: middle;">
+Welcome to Bank's Customer Tech Tracker 
+</span>
+</h1>
+</div>
+
+
+<br>
+
+
+
+
+
+
+<h1 class = "login"> Login </h1>
+
+
+
+<!-- 
+This part is for the login of the customer
+-username and password are both required
+-->
+<form action="client_login_action.php" method="post">
+  Username:<br>
+  <input type="text" name="username"><br>
+  Password:<br>
+  <input type="text" name="password"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+</body>
+</html>
