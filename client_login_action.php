@@ -6,14 +6,9 @@
 
 <?php
 
-$user_name = "root";
-$password = "elykjk22";
-//$database = "database123";
-$host_name = "localhost"; 
+//include("db_connect.php");
 
-mysql_connect($host_name, $user_name, $password);
 
-echo "Connection opened";
 
 ?>
 </body>
