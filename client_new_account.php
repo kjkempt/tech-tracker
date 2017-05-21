@@ -29,22 +29,28 @@ session_start();
             
             <li> <label title="Passwd" for="Passwd">Password <span>*</span>
             </label> <input type="password" name="Passwd" id="Passwd" size="30" 
-            maxlength="30" value="<?php if(!empty($_SESSION["Passwd"]))
+            maxlength="30" value="<?php 
+            if(!empty($_SESSION["Passwd"]))
             {echo($_SESSION["Passwd"]);} ?>" /></li>
             
             <li> <label title="PasswdConfirm" for="PasswdConfirm">Confirm Password 
             <span>*</span></label> <input type="password" name="PasswdConfirm" 
             id="PasswdConfirm" size="30" maxlength="30" value="<?php 
-            if(!empty($_SESSION["PasswdConfirm"])){echo($_SESSION["PasswdConfirm"]);} ?>"
+            if(!empty($_SESSION["PasswdConfirm"]))
+            {echo($_SESSION["PasswdConfirm"]);} ?>"
              /></li>
              
             <li> <label title="FirstName" for="FirstName">First Name <span>*</span></label> 
             <input type="text" name="FirstName" id="name" size="30" maxlength="30"
-             value="<?php if(!empty($_SESSION["FirstName"])){echo($_SESSION["FirstName"]);} ?>" /></li>
+             value="<?php 
+             if(!empty($_SESSION["FirstName"]))
+             {echo($_SESSION["FirstName"]);} ?>" /></li>
              
              <li> <label title="LastName" for="LastName">Last Name <span>*</span></label> 
             <input type="text" name="LastName" id="name" size="30" maxlength="30"
-             value="<?php if(!empty($_SESSION["LastName"])){echo($_SESSION["LastName"]);} ?>" /></li>
+             value="<?php 
+             if(!empty($_SESSION["LastName"]))
+             {echo($_SESSION["LastName"]);} ?>" /></li>
         </ul>
     </fieldset>
     <fieldset id="submit">

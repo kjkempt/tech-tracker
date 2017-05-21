@@ -17,7 +17,6 @@ include("db_connect.php");
 
 $LoginID = $_POST["LoginID"];
 $PW = $_POST["Passwd"];
-//echo $_POST["PasswdConfirm"];
 $FN = $_POST["FirstName"];
 $LN = $_POST["LastName"];
 
@@ -30,6 +29,13 @@ $LN = $_POST["LastName"];
 		header("Location:client_new_account.php");
 		exit;	
 	}	
+	
+	if($_POST["Passwd"] != $_POST["PasswdConfirm"])
+	{
+		$_SESSION["errorMessage"] = "Passwords were not the same.";
+		header("Location:client_new_account.php");
+		exit;
+	}
 
 	$sql = "SELECT LoginID FROM Client WHERE LoginID = '$LoginID' ";
 
